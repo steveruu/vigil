@@ -1,0 +1,274 @@
+[
+  {
+    "fromDate": "2025-09-07T22:00:00.000Z",
+    "toDate": "2025-09-11T22:00:00.000Z",
+    "users": [
+      "Bělohlav Ivo",
+      "Zběhlík Josef"
+    ]
+  },
+  {
+    "fromDate": "2025-09-14T22:00:00.000Z",
+    "toDate": "2025-09-18T22:00:00.000Z",
+    "users": [
+      "Bělohlav Radek",
+      "Vašák Otakar"
+    ]
+  },
+  {
+    "fromDate": "2025-09-21T22:00:00.000Z",
+    "toDate": "2025-09-25T22:00:00.000Z",
+    "users": [
+      "Čihula Ondřej",
+      "Urbánek Adam"
+    ]
+  },
+  {
+    "fromDate": "2025-09-28T22:00:00.000Z",
+    "toDate": "2025-10-02T22:00:00.000Z",
+    "users": [
+      "David Tomáš",
+      "Udič David"
+    ]
+  },
+  {
+    "fromDate": "2025-10-05T22:00:00.000Z",
+    "toDate": "2025-10-09T22:00:00.000Z",
+    "users": [
+      "Deimling Harry",
+      "Šajer Jakub"
+    ]
+  },
+  {
+    "fromDate": "2025-10-12T22:00:00.000Z",
+    "toDate": "2025-10-16T22:00:00.000Z",
+    "users": [
+      "Havlas Jakub",
+      "Severa Antonín"
+    ]
+  },
+  {
+    "fromDate": "2025-10-19T22:00:00.000Z",
+    "toDate": "2025-10-23T22:00:00.000Z",
+    "users": [
+      "Heřman David",
+      "Scollick Matthew Edward"
+    ]
+  },
+  {
+    "fromDate": "2025-10-26T23:00:00.000Z",
+    "toDate": "2025-10-30T23:00:00.000Z",
+    "users": [
+      "Holý Martin",
+      "Reiser Antonín"
+    ]
+  },
+  {
+    "fromDate": "2025-11-02T23:00:00.000Z",
+    "toDate": "2025-11-06T23:00:00.000Z",
+    "users": [
+      "Horáček Pavel",
+      "Rakučák Jiří"
+    ]
+  },
+  {
+    "fromDate": "2025-11-09T23:00:00.000Z",
+    "toDate": "2025-11-13T23:00:00.000Z",
+    "users": [
+      "Hudec Filip",
+      "Prchal Štěpán"
+    ]
+  },
+  {
+    "fromDate": "2025-11-16T23:00:00.000Z",
+    "toDate": "2025-11-20T23:00:00.000Z",
+    "users": [
+      "Chaloupecký Lukáš",
+      "Pilal Ondřej"
+    ]
+  },
+  {
+    "fromDate": "2025-11-23T23:00:00.000Z",
+    "toDate": "2025-11-27T23:00:00.000Z",
+    "users": [
+      "Kočnar Jan",
+      "Pesser Jakub"
+    ]
+  },
+  {
+    "fromDate": "2025-11-30T23:00:00.000Z",
+    "toDate": "2025-12-04T23:00:00.000Z",
+    "users": [
+      "Kubíček Tomáš Viktor",
+      "Miskovská Marija"
+    ]
+  },
+  {
+    "fromDate": "2025-12-07T23:00:00.000Z",
+    "toDate": "2025-12-11T23:00:00.000Z",
+    "users": [
+      "Bělohlav Ivo",
+      "Mendřický Radomír"
+    ]
+  },
+  {
+    "fromDate": "2025-12-14T23:00:00.000Z",
+    "toDate": "2025-12-18T23:00:00.000Z",
+    "users": [
+      "Bělohlav Radek",
+      "Zběhlík Josef"
+    ]
+  },
+  {
+    "fromDate": "2025-12-21T23:00:00.000Z",
+    "toDate": "2025-12-31T23:00:00.000Z",
+    "users": [
+      "Čihula Ondřej",
+      "Vašák Otakar"
+    ]
+  },
+  {
+    "fromDate": "2026-01-04T23:00:00.000Z",
+    "toDate": "2026-01-08T23:00:00.000Z",
+    "users": [
+      "David Tomáš",
+      "Urbánek Adam"
+    ]
+  },
+  {
+    "fromDate": "2026-01-11T23:00:00.000Z",
+    "toDate": "2026-01-15T23:00:00.000Z",
+    "users": [
+      "Deimling Harry",
+      "Udič David"
+    ]
+  },
+  {
+    "fromDate": "2026-01-18T23:00:00.000Z",
+    "toDate": "2026-01-22T23:00:00.000Z",
+    "users": [
+      "Havlas Jakub",
+      "Šajer Jakub"
+    ]
+  },
+  {
+    "fromDate": "2026-01-25T23:00:00.000Z",
+    "toDate": "2026-01-29T23:00:00.000Z",
+    "users": [
+      "Heřman David",
+      "Severa Antonín"
+    ]
+  },
+  {
+    "fromDate": "2026-02-01T23:00:00.000Z",
+    "toDate": "2026-02-05T23:00:00.000Z",
+    "users": [
+      "Holý Martin",
+      "Scollick Matthew Edward"
+    ]
+  },
+  {
+    "fromDate": "2026-02-08T23:00:00.000Z",
+    "toDate": "2026-02-12T23:00:00.000Z",
+    "users": [
+      "Horáček Pavel",
+      "Reiser Antonín"
+    ]
+  },
+  {
+    "fromDate": "2026-02-15T23:00:00.000Z",
+    "toDate": "2026-02-19T23:00:00.000Z",
+    "users": [
+      "Hudec Filip",
+      "Rakučák Jiří"
+    ]
+  },
+  {
+    "fromDate": "2026-02-22T23:00:00.000Z",
+    "toDate": "2026-02-26T23:00:00.000Z",
+    "users": [
+      "Chaloupecký Lukáš",
+      "Prchal Štěpán"
+    ]
+  },
+  {
+    "fromDate": "2026-03-01T23:00:00.000Z",
+    "toDate": "2026-03-05T23:00:00.000Z",
+    "users": [
+      "Kočnar Jan",
+      "Pilal Ondřej"
+    ]
+  },
+  {
+    "fromDate": "2026-03-08T23:00:00.000Z",
+    "toDate": "2026-03-12T23:00:00.000Z",
+    "users": [
+      "Kubíček Tomáš Viktor",
+      "Pesser Jakub"
+    ]
+  },
+  {
+    "fromDate": "2026-03-15T23:00:00.000Z",
+    "toDate": "2026-03-19T23:00:00.000Z",
+    "users": [
+      "Mendřický Radomír",
+      "Miskovská Marija"
+    ]
+  },
+  {
+    "fromDate": "2026-03-22T23:00:00.000Z",
+    "toDate": "2026-03-26T23:00:00.000Z",
+    "users": [
+      "Bělohlav Ivo",
+      "Zběhlík Josef"
+    ]
+  },
+  {
+    "fromDate": "2026-03-29T22:00:00.000Z",
+    "toDate": "2026-04-02T22:00:00.000Z",
+    "users": [
+      "Bělohlav Radek",
+      "Vašák Otakar"
+    ]
+  },
+  {
+    "fromDate": "2026-04-05T22:00:00.000Z",
+    "toDate": "2026-04-09T22:00:00.000Z",
+    "users": [
+      "Čihula Ondřej",
+      "Urbánek Adam"
+    ]
+  },
+  {
+    "fromDate": "2026-04-12T22:00:00.000Z",
+    "toDate": "2026-04-16T22:00:00.000Z",
+    "users": [
+      "David Tomáš",
+      "Udič David"
+    ]
+  },
+  {
+    "fromDate": "2026-04-19T22:00:00.000Z",
+    "toDate": "2026-04-23T22:00:00.000Z",
+    "users": [
+      "Deimling Harry",
+      "Šajer Jakub"
+    ]
+  },
+  {
+    "fromDate": "2026-04-26T22:00:00.000Z",
+    "toDate": "2026-04-30T22:00:00.000Z",
+    "users": [
+      "Havlas Jakub",
+      "Severa Antonín"
+    ]
+  },
+  {
+    "fromDate": "2026-05-03T22:00:00.000Z",
+    "toDate": "2026-05-07T22:00:00.000Z",
+    "users": [
+      "Heřman David",
+      "Scollick Matthew Edward"
+    ]
+  }
+]

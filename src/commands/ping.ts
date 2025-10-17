@@ -5,8 +5,8 @@ export const data = new SlashCommandBuilder()
   .setDescription('Replies with Pong!');
 
 export async function executeSlash(interaction: CommandInteraction): Promise<void> {
-  const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true });
-  const latency = sent.createdTimestamp - interaction.createdTimestamp;
+  const reply = await interaction.deferReply({ fetchReply: true });
+  const latency = reply.createdTimestamp - interaction.createdTimestamp;
   await interaction.editReply(`🏓 pong! trvalo ${latency}ms | ws: ${interaction.client.ws.ping}ms`);
 }
 

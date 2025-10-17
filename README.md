@@ -1,11 +1,14 @@
 # Vigil Discord Bot
 
-A simple TypeScript Discord bot with both slash commands and prefix commands.
+A simple TypeScript Discord bot with both slash commands and prefix commands. Includes a class duty tracking system with CSV import.
 
 ## Features
 
-- ✅ Slash command: `/ping`
-- ✅ Prefix command: `v!ping`
+- ✅ Slash command: `/ping` - Bot latency check
+- ✅ Prefix command: `v!ping` - Bot latency check
+- 📋 `/sluzba` or `v!sluzba` - Shows who has duty this week (in Czech)
+- 🔧 `/nastavsluzbu` or `v!nastavsluzbu` - Set duty for a specific week (admin only)
+- 📁 `/importsluzba` - Import duties from CSV file (admin only)
 - ⚡ Built with TypeScript and discord.js v14
 
 ## Setup
@@ -21,10 +24,13 @@ A simple TypeScript Discord bot with both slash commands and prefix commands.
    ```env
    DISCORD_TOKEN=your_bot_token_here
    CLIENT_ID=your_client_id_here
+   PREFIX=v!
+   ADMIN_IDS=your_discord_user_id_here
    ```
    
    - Get your bot token from [Discord Developer Portal](https://discord.com/developers/applications)
    - CLIENT_ID is your bot's Application ID (found in the same portal)
+   - ADMIN_IDS is a comma-separated list of Discord user IDs who can manage duties
 
 3. **Enable Required Intents**
    
@@ -59,21 +65,53 @@ A simple TypeScript Discord bot with both slash commands and prefix commands.
 ### `/ping` or `v!ping`
 Checks the bot's latency and websocket ping.
 
+### `/sluzba` or `v!sluzba`
+Shows who has class duty this week. Response in Czech: "Službu má tento týden [jméno] a [jméno]..."
+
+### `/nastavsluzbu [od] [do] [jména]` or `v!nastavsluzbu [od], [do], [jméno1], [jméno2]` (Admin only)
+Set duty for a specific date range.
+- **od**: Start date (DD.MM.YYYY or YYYY-MM-DD)
+- **do**: End date (DD.MM.YYYY or YYYY-MM-DD)
+- **jména**: Comma-separated list of names (second name is optional)
+
+Example: `/nastavsluzbu 21.10.2025 27.10.2025 Jan Novák, Petr Dvořák`
+
+### `/importsluzba [soubor]` (Admin only)
+Import duties from a CSV file. Attach a CSV file with format:
+```csv
+# fromDate,toDate,name1,name2
+21.10.2025,27.10.2025,Jan Novák,Petr Dvořák
+28.10.2025,03.11.2025,Marie Svobodová
+04.11.2025,10.11.2025,Lucie Veselá,Martin Procházka
+```
+
+Both date formats are supported: `DD.MM.YYYY` or `YYYY-MM-DD`. The second name is optional.
+
+See `sluzby-priklad.csv` for an example.
+
 ## Project Structure
 
 ```
 vigil/
 ├── src/
 │   ├── commands/
-│   │   └── ping.ts       # Ping command implementation
-│   ├── config.ts          # Bot configuration
-│   ├── index.ts           # Main bot file
-│   └── deploy-commands.ts # Slash command deployment
-├── dist/                  # Compiled JavaScript (auto-generated)
-├── .env                   # Environment variables (create this)
-├── .env.example          # Example environment file
-├── tsconfig.json         # TypeScript configuration
-└── package.json          # Project dependencies
+│   │   ├── ping.ts           # Ping command
+│   │   ├── sluzba.ts         # Show current week duty
+│   │   ├── nastavsluzbu.ts   # Set duty (admin)
+│   │   └── importsluzba.ts   # Import from CSV (admin)
+│   ├── database/
+│   │   └── duty.ts           # KV database for duties
+│   ├── config.ts             # Bot configuration
+│   ├── index.ts              # Main bot file
+│   └── deploy-commands.ts    # Slash command deployment
+├── data/
+│   └── duty.json             # Stored duty data (auto-generated)
+├── dist/                     # Compiled JavaScript (auto-generated)
+├── sluzby-priklad.csv        # Example CSV file for import
+├── .env                      # Environment variables (create this)
+├── .env.example              # Example environment file
+├── tsconfig.json             # TypeScript configuration
+└── package.json              # Project dependencies
 ```
 
 ## Adding New Commands
