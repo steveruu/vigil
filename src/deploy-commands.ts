@@ -6,6 +6,7 @@ import * as importCommand from './commands/import_duty';
 import * as manualCommand from './commands/set_duty';
 import * as resetCommand from './commands/reset';
 import * as rozpisCommand from './commands/rozpis';
+import * as jaCommand from './commands/ja';
 
 const commands = [
   pingCommand.data.toJSON(),
@@ -14,6 +15,7 @@ const commands = [
   manualCommand.data.toJSON(),
   resetCommand.data.toJSON(),
   rozpisCommand.data.toJSON(),
+  jaCommand.data.toJSON(),
 ];
 
 const rest = new REST().setToken(CONFIG.token);

@@ -8,6 +8,7 @@ import * as importCommand from './commands/import_duty';
 import * as manualCommand from './commands/set_duty';
 import * as resetCommand from './commands/reset';
 import * as rozpisCommand from './commands/rozpis';
+import * as jaCommand from './commands/ja';
 
 interface Command {
   data: any;
@@ -30,6 +31,7 @@ commands.set('import', importCommand as Command);
 commands.set('manual', manualCommand as Command);
 commands.set('reset', resetCommand as Command);
 commands.set('rozpis', rozpisCommand as Command);
+commands.set('ja', jaCommand as Command);
 
 // Initialize database
 dutyDB.init().then(() => {
