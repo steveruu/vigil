@@ -1,6 +1,7 @@
 import { Client, GatewayIntentBits, Collection, Events } from 'discord.js';
 import { CONFIG } from './config';
 import { dutyDB } from './database/duty';
+import { setupScheduler } from './utils/scheduler';
 import * as pingCommand from './commands/ping';
 import * as sluzbaCommand from './commands/duty';
 import * as importCommand from './commands/import_duty';
@@ -42,6 +43,9 @@ client.once(Events.ClientReady, (c) => {
   console.log(`📝 Prefix: ${CONFIG.prefix}`);
   console.log(`🤖 Bot ID: ${c.user.id}`);
   console.log(`📊 Registered ${commands.size} commands`);
+  
+  // Setup scheduled tasks
+  setupScheduler(client);
 });
 
 client.on(Events.InteractionCreate, async (interaction) => {

@@ -4,11 +4,13 @@ A simple TypeScript Discord bot with both slash commands and prefix commands. In
 
 ## Features
 
-- ✅ Slash command: `/ping` - Bot latency check
-- ✅ Prefix command: `v!ping` - Bot latency check
-- 📋 `/sluzba` or `v!sluzba` - Shows who has duty this week (in Czech)
-- 🔧 `/nastavsluzbu` or `v!nastavsluzbu` - Set duty for a specific week (admin only)
-- 📁 `/importsluzba` - Import duties from CSV file (admin only)
+- ✅ `/ping` - Bot latency check
+- 📋 `/sluzba` - Shows who has duty this week with Discord mentions
+- � `/rozpis` - Displays full duty schedule in an embed
+- 📁 `/import` - Import duties from CSV file (admin only)
+- 🔧 `/manual` - Manually set duty for a date range (admin only)
+- �️ `/reset` - Wipe all duty records (admin only)
+- ⏰ **Automatic Monday Reminders** - Sends duty reminder every Monday at 7:30 AM Prague time
 - ⚡ Built with TypeScript and discord.js v14
 
 ## Setup
@@ -24,13 +26,15 @@ A simple TypeScript Discord bot with both slash commands and prefix commands. In
    ```env
    DISCORD_TOKEN=your_bot_token_here
    CLIENT_ID=your_client_id_here
-   PREFIX=v!
-   ADMIN_IDS=your_discord_user_id_here
+   PREFIX=n!
+   ADMIN_ID=402518467556671500
+   REMINDER_CHANNEL_ID=your_channel_id_for_weekly_reminders
    ```
    
    - Get your bot token from [Discord Developer Portal](https://discord.com/developers/applications)
    - CLIENT_ID is your bot's Application ID (found in the same portal)
-   - ADMIN_IDS is a comma-separated list of Discord user IDs who can manage duties
+   - ADMIN_ID is the Discord user ID of the bot administrator (only this user can use admin commands)
+   - REMINDER_CHANNEL_ID is the channel where Monday morning reminders will be sent
 
 3. **Enable Required Intents**
    
